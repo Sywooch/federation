@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
+
+RewriteCond %{HTTP_HOST} ^www.fpbuilders\.ru$ [NC]
+RewriteRule ^(.*)$ http://fpbuilders.ru/$1 [R=301,L]
