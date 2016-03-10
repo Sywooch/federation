@@ -1,0 +1,797 @@
+/* **************************************************************************
+                                ORDERS
+*****************************************************************************/
+div.adminOrdersContent div.adminOrderRow {
+    padding: 10px;
+    margin: 35px 0 35px 0;
+}
+
+div.adminOrderRow div.orderHead {
+    font-size: 24px;
+}
+
+div.adminOrderRow div.orderHead span {
+    font-size: 18px;
+    display: inline-block;
+    color: #cccccc;
+}
+
+div.adminOrderRow div.orderHead h4 {
+    display: inline-block;
+    font-weight: normal;
+    margin: 10px 10px 0 10px;
+    color: #b32020;
+}
+
+div.adminOrderRow div.orderHead p {
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    margin: 10px 0 10px 20px;
+    color: #7c7a7a;
+}
+
+div.adminOrderRow div.orderSubj h5 {
+    color: #2268b0;
+    margin: 0 0 0 20px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+div.adminOrderRow div.orderSubj p {
+    display: inline-block;
+    padding: 15px 20px 20px 20px;
+    margin: 10px 0 0 0;
+    background: #fff;
+    width: 95%;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    color: #7c7a7a;
+}
+
+div.adminOrderRow div.orderInfoRow {
+    margin-top: 20px;
+    width: 700px;
+    float: left;
+    color: #7c7a7a;
+}
+
+div.adminOrderRow div.orderInfoRowTwo {
+    width: 250px;
+}
+
+div.adminOrderRow div.orderInfoRow span {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+div.adminOrderRow div.orderInfoRow h5 {
+    color: #2268b0;
+    margin: 0 0 0 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+div.adminOrderRow div.orderInfoRow a {
+    color: #7c7a7a;
+
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+div.adminOrderRow div.orderInfoRow a:hover {
+    color: #b32020;
+    padding-left: 5px;
+}
+
+div.adminOrdersContent h2 {
+    font-size: 28px;
+    color: #2268b0;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0px;
+}
+
+div.adminOrdersContent h2.first {
+    padding-top: 60px;
+}
+
+div.adminOrdersContent h2.first span {
+    color: #b32020;
+}
+
+div.orderModify {
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #cba74e;
+    background: #e0ba77;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+div.adminOrderRow div.orderInfoRow div.orderModify a {
+    color: #fff;
+    padding: 12px 0 0 0;
+    display: block;
+    height: 32px;
+    width: inherit;
+}
+
+div.adminOrderRow div.orderInfoRow div.orderModify a:hover {
+    background: #cca35b;
+}
+
+div.paginationContainer p.inEachLevel {
+    margin: 10px 0 -20px 0;
+    color: #7c7a7a;
+}
+
+div.paginationContainer h5 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 30px 0 0px 0;
+    color: #2268b0;
+}
+
+div.linkFileDiv {
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+div.linkFileDiv a {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+div label.labelAddHeader {
+    margin-top: 40px;
+    color: #2268b0;
+}
+
+/* *********************************
+           LEARN MODAL
+************************************/
+
+div.overlay {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+div.overlay div.overlayContent {
+    position: relative;
+    width: 1020px;
+    height: 570px;
+    padding: 20px 0px 0px 40px;
+    margin: 150px auto;
+    background: #fff;
+    border: 2px #aaa solid;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+
+    box-shadow: 3px 3px 8px #556;
+    -webkit-box-shadow: 3px 3px 8px #556;
+    -moz-box-shadow: 3px 3px 8px #556;
+}
+
+div.overlayContent div.loading {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff url('../../../img/loading_modify_2.gif') 50% 50% no-repeat;
+}
+
+h2.modifyHeader {
+    text-align: center;
+    font-weight: normal;
+    color: #2268b0;
+}
+
+h2.modifyHeader span {
+    color: #b32020;
+}
+
+form#orderModify div.orderModifyRow {
+    margin-top: 0px;
+    width: 460px;
+    float: left;
+    height: 400px;
+}
+
+form#orderModify input[type='text'] {
+    margin-top: 7px;
+    height: 35px;
+    width: 300px;
+}
+
+form#orderModify textarea {
+    height: 220px;
+    width: 500px;
+    margin-top: 7px;
+    padding: 7px 10px;
+    font-size: 14px;
+    color: #7c7a7a;
+    border: 1px solid #dce0e8;
+
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+form#orderModify label {
+    float: left;
+    width: 100px;
+    font-size: 14px;
+    margin: 18px 0 0 0;
+}
+
+form#orderModify label.labelBig {
+    width: 130px;
+    margin-top: 30px;
+}
+
+form#orderModify select {
+    height: 35px;
+    width: 280px;
+    color: #7c7a7a;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid #dce0e8;
+
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+div#listSelect div.modifySelect {
+    position: relative;
+    height: 20px;
+    padding: 10px 20px;
+    margin: 10px 0 5px 00px;
+    width: 280px;
+    background: #fff;
+    border: 1px solid #dce0e8;
+    float: none;
+    cursor: pointer;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+div.orderModifyRow div#listSelect div.subModify {
+    margin: -3px 0 0 0px;
+    width: 325px;
+}
+
+div.orderModifyRow div#listSelect div.subCurrentContent {
+    width: 314px;
+    margin: -3px 0 0 325px;
+}
+
+div.modifyCloseButton {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background: url('../../../img/close_button.png') 0 0 no-repeat;
+
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+div.modifyCloseButton:hover {
+    background: url('../../../img/close_button_hover.png') 0 0 no-repeat;
+}
+
+div.modifyCloseButtonHover {
+    background: url('../../../img/close_button_hover.png') 0 0 no-repeat;
+    display: none;
+}
+
+div.learnDeleteLink {
+    position: absolute;
+    margin-top: -90px;
+    cursor: pointer;
+}
+
+div.learnDeleteLink a {
+    font-size: 12px;
+    color: #b32020;
+
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+div.learnDeleteLink a:hover {
+    color: #2268b0;
+}
+
+div.learnShowModify {
+    position: absolute;
+    bottom: 41px;
+    margin: 0px 0 0px 384px;
+    cursor: pointer;
+    width: 250px;
+    padding-top: 18px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #cba74e;
+    background: #e0ba77;
+}
+
+div.learnShowModify:hover {
+    background: #cca35b;
+}
+
+form#orderModify input[type='text'].blockInput,
+form#orderModify select.blockInput,
+form#orderModify textarea.blockInput,
+div#listSelect div.blockInput {
+    background: none;
+    cursor: text;
+    border: 1px dotted #cca35b;
+}
+
+/* **************************************************************************
+                                MASTERS
+*****************************************************************************/
+
+div.adminMastersList p {
+    text-align: center;
+    font-size: 20px;
+    color: #7c7a7a;
+}
+
+div.adminMastersList ul {
+    margin: 0 auto;
+    width: 500px;
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+div.adminMastersList ul li {
+    display: block;
+    color: #7c7a7a;
+    height: 50px;
+    border-bottom: 1px dotted #cccccc;
+
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+div.adminMastersList ul li:hover {
+    padding-left: 10px;
+    height: 53px;
+    font-size: 18px;
+    background: #eee;
+}
+
+div.adminMastersList ul li a {
+    color: #7c7a7a;
+    display: block;
+    height: 35px;
+    width: 100%;
+    padding: 15px 0 0 20px;
+}
+
+div.adminMastersList ul li a:hover {
+    color: #b32020;
+
+}
+
+div.labelPlusInput {
+    margin: 10px;
+}
+
+div.labelPlusInput label.labelMasterReduction {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 350px;
+    margin: 16px 20px 0 0;
+    color: #7c7a7a;
+    font-size: 16px;
+}
+
+div.labelPlusInput input[type='text'].form-control {
+
+    height: 35px;
+    width: 550px;
+    padding-left: 20px;
+    border: 1px solid #dce0e8;
+    color: #7c7a7a;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+div.labelPlusTextarea {
+    margin-top: 25px;
+    height: auto;
+}
+
+div.labelPlusTextarea textarea {
+    height: 190px;
+    width: 540px;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    color: #7c7a7a;
+    font-size: 14px;
+    border: 1px solid #dce0e8;
+}
+
+div.labelPlusCheckbox {
+    margin-top: 10px;
+}
+
+div.labelPlusInput label.labelMasterReduction em {
+    font-size: 14px;
+    color: #bbb;
+}
+
+div.labelPlusCheckbox input[type='checkbox'] {
+    display: block;
+    float: left;
+}
+
+div.labelPlusCheckbox label.checkbox {
+    display: block;
+    clear: right;
+    color: #7c7a7a;
+}
+
+div.labelPlusCheckboxContainer {
+    width: 300px;
+    margin: 0 auto;
+    height: 233px;
+    overflow: hidden;
+}
+
+h4.secondHeader {
+    color: #2268b0;
+    margin: 40px 10px 10px 10px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+}
+
+div.showHideFullList {
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    color: #b32020;
+    font-size: 18px;
+}
+
+div.showHideFullList:hover {
+    color: #2268b0;
+}
+
+div#showFullList, div#showFullListComments, div#showFullListFotos {
+    margin: 25px auto;
+}
+
+div#hideFullList, div#hideFullListComments, div#hideFullListFotos {
+    display: none;
+    margin: 25px auto;
+}
+
+div.labelPlusCheckboxContainer p.typeServicesHeader {
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0 5px 20px;
+    border-bottom: 1px dotted #7c7a7a;
+    color: #2268b0;
+}
+
+div div.foto {
+    height: 340px;
+    overflow: hidden;
+}
+
+div.fotoContainer {
+    float: left;
+}
+
+div.fotoActionDiv {
+    float: left;
+}
+
+div.foto div.fotoContainer div.fotoCurrent {
+    float: none;
+}
+
+div.fotoActionDiv div.radio {
+    float: left;
+    margin: 10px 15px 30px 20px;
+}
+
+div.masterComments {
+    color: #7c7a7a;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+div.commentActionDiv {
+    position: absolute;
+    right: 0;
+    margin-top: -20px;
+}
+
+div.commentActionDiv div.radio {
+    float: left;
+    margin-right: 15px;
+}
+
+div.avatarMaster {
+    margin: 0 auto 40px auto;
+    width: 400px;
+}
+
+div.avatarMaster img {
+    display: block;
+    float: left;
+    height: 100px;
+    width: 100px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 3px #97a6b5;
+}
+
+div.addAvatar {
+    float: left;
+    margin: 25px;
+    color: #7c7a7a;
+}
+
+div.addFotosDiv {
+    width: 320px;
+    margin: 25px auto 40px auto;
+    color: #7c7a7a;
+}
+
+div.deleteCurrentMaster {
+    margin: -120px 0 100px 0;
+    width: 200px;
+}
+
+div.deleteCurrentMaster a {
+    color: #b32020;
+    font-size: 14px;
+}
+
+div.deleteCurrentMaster a:hover {
+    border-bottom: 1px dotted;
+}
+
+div.errorMessageCenter {
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+}
+
+div.labelPlusTextarea {
+    margin-top: 25px;
+    height: auto;
+}
+
+div.labelPlusTextarea textarea {
+    height: 190px;
+    width: 540px;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    color: #7c7a7a;
+    font-size: 14px;
+    border: 1px solid #dce0e8;
+}
+
+div.labelPlusInput label.labelSendMessage {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 180px;
+    margin: 16px 20px 0 0;
+    color: #7c7a7a;
+    font-size: 16px;
+}
+
+div.sendMessageDiv {
+    color: #7c7a7a;
+    margin: 0 100px 60px 100px;
+}
+
+div.sendMessageDiv h5 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #2268b0;
+}
+
+div.sendMessageDiv p span {
+    display: inline-block;
+    min-width: 200px;
+    font-weight: bold;
+}
+
+div#selectAll {
+    text-align: right;
+}
+
+div#selectAll span, a.sendMore {
+    color: #2268b0;
+    cursor: pointer;
+
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+div#selectAll span:hover, a.sendMore:hover {
+    color: #b32020;
+}
+
+/* **************************************************************************
+                                INFORMATION
+*****************************************************************************/
+
+div.informationDeleteContainer {
+    width: 700px;
+    margin: 0 auto;
+    color: #7c7a7a;
+}
+
+div.informationDeleteContainer div.labelPlusCheckbox {
+    margin-top: 15px;
+}
+
+div.informationDeleteContainer label {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+div.informationDeleteContainer input[type='checkbox'] {
+    margin: 6px 12px 0 0;
+    color: #7c7a7a;
+}
+
+div.informationDeleteContainer div.labelPlusCheckbox a {
+    color: #2268b0;
+    font-size: 18px;
+    font-style: italic;
+
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+div.informationDeleteContainer a:hover {
+    color: #b32020;
+}
+
+div.field-admininformation-file {
+    margin-top: 30px;
+}
+
+div.field-admininformation-file1 {
+    margin-top: 20px;
+}
+
+div.createInformation {
+    color: #7c7a7a;
+}
+
+div.createInformation input[type='file'] {
+    clear: none;
+    display: inline-block;
+}
+
+div.createInformation label.forFile {
+    display: inline-block;
+    width: 150px;
+}
+
+div.createInformation label.forFile span {
+    font-size: 26px;
+}
+
+div.nicEdit-main {
+    background: #fff;
+}
+
+div.imgBefore div {
+    margin-top: 10px;
+}
+
+div.imgBefore div strong {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+div.imgBefore div input {
+    margin-left: 30px;
+}
+
+div.imgBefore div a {
+    color: #2268b0;
+}
+
+div.imgBefore div a:hover {
+    color: #b32020;
+}
+
+p.imgBeforeHeader {
+    color: #b32020;
+    font-weight: bold;
+}
+
+div#allFiles {
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+p.instruction {
+    color: #7c7a7a;
+    margin-left: 10px;
+}
+
+p.instruction strong {
+    font-size: 24px;
+}
+
+/* **************************************************************************
+                                HOUR
+*****************************************************************************/
+
+div.hourActionDiv {
+    float: left;
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    color: #b32020;
+}
+
+div.errorMsg {
+    text-align: center;
+    color: #b32020;
+    margin-top: 30px;
+    font-size: 20px;
+}

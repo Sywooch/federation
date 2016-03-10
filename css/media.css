@@ -1,0 +1,461 @@
+@media screen and (max-width: 1200px) {
+    .shadow {
+        display: none;
+    }
+
+    /* master */
+    div.view {
+        overflow: visible;
+        height: auto;
+    }
+
+    .view ul {
+        width: 97%;
+        margin-left: 20px;
+    }
+
+    .view li {
+        float: none;
+    }
+
+    /* pearson */
+    div#showButtons {
+        display: none;
+    }
+
+    div#pearsonPhoto {
+        width: 31%;
+        padding: 1% 1% 0 1%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    /* full header */
+    .builder,
+    .slogan {
+        display: none;
+    }
+
+    .menu div.menuButton {
+        width: 20%;
+    }
+
+    label.marginTop {
+        margin-top: 15px;
+    }
+
+    .headerAdd {
+        margin-top: 23px;
+    }
+
+    .youNeedButton {
+        display: block;
+        float: none;
+        margin: 30px auto 0 auto;
+    }
+
+    .headerAdd {
+        background: none;
+    }
+
+    .youNeed {
+        float: none;
+        margin: 10px auto 0 auto;
+    }
+
+    div.listSelectCurrentValue {
+        float: none;
+        margin: 0 auto;
+        width: 95%;
+        text-align: center;
+    }
+
+    div#listSelect {
+        margin: 15px auto;
+        width: 70%;
+    }
+
+    div#listSelect div.sub {
+        margin: 0;
+        width: 280px;
+    }
+
+    div#listSelect div.subCurrentContent {
+        margin: 0 0 0 280px;
+        width: 320px;
+    }
+
+    .menu a div span.spanNewAdd {
+        right: -10px;
+    }
+
+    div.listSelectCurrentValueAdd {
+        width: 90%;
+        margin: 10px 0 0 0;
+    }
+
+    div#listSelect div.subAdd {
+        margin: 0;
+        width: 280px;
+    }
+
+    div#listSelect div.subCurrentContentAdd {
+        margin: 0 0 0 280px;
+        width: 320px;
+    }
+
+    /* index services */
+    div.servicesRow {
+        width: 32%;
+    }
+
+    div#servicesRow4 {
+        margin-top: 40px;
+    }
+
+    div#servicesRow7, div#servicesRow8 {
+        width: 48%;
+    }
+
+    /* index 3 parts */
+    .stepOfWorkRow div.stepImg,
+    .stepOfWorkRow div.stepHead,
+    .stepOfWorkRow div.stepText {
+        float: none;
+    }
+
+    .stepOfWorkRow {
+        padding-top: 50px;
+    }
+
+    .stepOfWorkRow div.stepImg {
+        margin: 0 auto;
+    }
+
+    .stepOfWorkRow div.stepHead {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .stepOfWorkRow div.stepText {
+        text-align: center;
+    }
+
+    /* about */
+    div.aboutPageImgTwo {
+        display: none;
+    }
+
+    /* footer */
+    div.grayFooter {
+        display: none;
+    }
+
+    /* masters */
+    div.masterHeader {
+        padding: 30px 0 15px 0;
+    }
+
+    /* contacts */
+    div#map,
+    div#hideLineMap {
+        display: none;
+    }
+
+    div#listSelectContacts {
+        margin: 15px auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    /* menu */
+    .menu a div span.spanNewFull,
+    .menu a div span.spanNewAdd {
+        display: none;
+    }
+
+    /* step of work */
+    .stepOfWorkRow div.stepHead p:first-child {
+        font-size: 18px;
+    }
+
+    /* hours */
+    div.hourText, div.hourInfo {
+        float: none;
+        width: 95%;
+    }
+
+    div.hourInfo p span {
+        width: 130px;
+    }
+
+    div.search input[type='text'].form-control {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    /* header */
+    div#listSelect {
+        width: 90%;
+    }
+
+    div#headerContact {
+        top: -20px;
+    }
+
+    /* back call */
+    div#backCall, div#navUpContainer {
+        display: none;
+    }
+
+    /* inform row */
+    div#informRow3 {
+        display: none;
+    }
+
+    div.informRow,
+    div.informReadMoreContent {
+        width: 47%;
+        margin-left: 1%;
+    }
+
+    /* masters */
+    div.masterHeader div.avatar {
+        float: none;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    div.masterHeader div.masterInfo {
+        text-align: center;
+        float: none;
+    }
+
+    div#rating,
+    div#ratingPerson {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    div#rating {
+        width: 250px;
+    }
+
+    div#ratingPerson {
+        width: 220px;
+    }
+
+    /* success */
+    div.addSuccessImg {
+        display: none;
+    }
+
+    div.aboutText#success {
+        text-align: center;
+    }
+
+    /* breadcrumb */
+    ul.breadcrumb {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    /* menu */
+    div#listSelect div.sub {
+        margin: 0;
+        width: 280px;
+    }
+
+    div#listSelect div.subCurrentContent,
+    div#listSelect div.subCurrentContentAdd {
+        margin: 0;
+        right: 0;
+        z-index: 1000;
+    }
+
+    div.buttonMenu, div.lineButtonMenu {
+        display: block;
+        position: relative;
+    }
+
+    div.menu {
+        display: none;
+    }
+
+    .menu {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        height: 100%;
+        background: #fff;
+        width: 180px;
+        opacity: .9;
+    }
+
+    .menu div.menuButton,
+    .menu div.menuButtonAdd {
+        width: 105%;
+        font-size: 12px;
+        padding: 18px 0 15px 0;
+        float: none;
+        border-bottom: 1px dotted #abbec7;
+        margin-left: -15px;
+    }
+
+    .menu div.menuButton:hover {
+        background-position: 0 -8px;
+    }
+
+    div.hideMenu {
+        display: block;
+    }
+
+    div#headerContact {
+        top: -10px;
+    }
+
+    /* step of work */
+    .stepOfWorkRow div.stepText {
+        line-height: 21px;
+    }
+
+    /* index services */
+    div.servicesRow {
+        width: 48%;
+    }
+
+    div#servicesRow3 {
+        margin-top: 40px;
+    }
+
+    /* line */
+    div.line img {
+        display: none;
+    }
+
+    div.line {
+        border-bottom: 1px solid #dadad8;
+    }
+
+    /* masters */
+    div.foto div.fotoCurrent {
+        font-size: 10px;
+    }
+
+    div.foto div.fotoCurrent span.caption {
+        background: #fff;
+    }
+
+    div.comment div.commentWho {
+        height: auto;
+    }
+
+    span.ratingUpDownPerson {
+        float: none;
+        margin: 0 auto;
+    }
+
+    div.comment div.commentWho p {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* contacts */
+    div.contactRow {
+        width: 95%;
+        margin: 30px 0 0 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content {
+        width: 95%;
+    }
+
+    /* header */
+    div#headerContact a {
+        font-size: 16px;
+    }
+
+    div#informRow,
+    div#sendComment {
+        display: none;
+    }
+
+    div#registration {
+        float: left;
+        margin-left: 0;
+    }
+
+    div#listSelect div.subCurrentContent {
+        width: 250px;
+    }
+
+    /* step of work */
+    div#stepOfWork,
+    div.grayLinking {
+        display: none;
+    }
+
+    /* line */
+    #hideLine {
+        display: none;
+    }
+
+    /* index */
+    div.aboutImg,
+    div.howItWorkImg {
+        display: none;
+    }
+
+    div.aboutText {
+        margin-top: -20px;
+    }
+
+    div.howItWorkText {
+        margin-top: -30px;
+        float: none;
+    }
+
+    /* index services */
+    div.greyBg#services {
+        display: none;
+    }
+
+    /* masters */
+    div.foto div.fotoCurrent span.caption {
+        display: none;
+    }
+
+    div.foto div.fotoCurrent {
+        float: none;
+        width: 95%;
+    }
+
+    div#pearsonPhoto {
+        width: 100%;
+    }
+
+    div.foto div.fotoCurrent img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    div#headerContact {
+        display: none;
+    }
+
+    div#listSelect {
+        width: 80%;
+    }
+
+    div.listSelectCurrentValue {
+        padding: 10px;
+        height: auto;
+    }
+}
