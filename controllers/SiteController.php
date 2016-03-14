@@ -19,33 +19,13 @@ use app\models\Hour;
 class SiteController extends Controller
 {
     /**
-     * Set the post method to the logout action
-     *
-     * @return array
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class'   => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
-    /**
-     * Set the error handler and captcha params
+     * Set captcha params
      *
      * @return array
      */
     public function actions()
     {
         return [
-            'error'   => [
-                'class' => 'yii\web\ErrorAction'
-            ],
             'captcha' => [
                 'class'           => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
@@ -264,5 +244,18 @@ class SiteController extends Controller
         return $this->render('backCallSuccess', [
             'model' => $model
         ]);
+    }
+
+    /**
+     * Action on error
+     *
+     * @return string
+     */
+    public function actionError()
+    {
+        $exception = Yii::$app->errorHandler->exception;
+        if ($exception !== null) {
+            return $this->render('error', ['exception' => $exception]);
+        }
     }
 }

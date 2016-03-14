@@ -22,33 +22,13 @@ class MastersController extends Controller
     public $commentsOnPage = 5;
 
     /**
-     * Set the post method to logout action
-     *
-     * @return array
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class'   => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
-    /**
-     * Set the error handler and captcha params
+     * Set captcha params
      *
      * @return array
      */
     public function actions()
     {
         return [
-            'error'   => [
-                'class' => 'yii\web\ErrorAction'
-            ],
             'captcha' => [
                 'class'           => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,

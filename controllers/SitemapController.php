@@ -14,37 +14,6 @@ use app\models\Sitemap;
 class SitemapController extends Controller
 {
     /**
-     * Set the post method to the logout action
-     *
-     * @return array
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class'   => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
-    /**
-     * Set the error handler
-     *
-     * @return array
-     */
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction'
-            ],
-        ];
-    }
-
-    /**
      * Generate sitemap.xml file
      *
      * @return string Html code

@@ -16,37 +16,6 @@ use app\models\Information;
 class InformationController extends Controller
 {
     /**
-     * Set the post method to logout action
-     *
-     * @return array
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class'   => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
-    /**
-     * Set the error handler and captcha params
-     *
-     * @return array
-     */
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction'
-            ],
-        ];
-    }
-
-    /**
      * Remember the url
      *
      * @param \yii\base\Action $action
